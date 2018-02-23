@@ -1,0 +1,23 @@
+
+Call:
+lm(formula = Melting_point ~ pred_logP + pred_logS + pred_PSA + 
+    pred_refractivity + pred_polarizability - 1, data = table)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-353.21  -35.06   12.18   80.28  260.07 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+pred_logP           -12.5769     5.5383  -2.271 0.024548 *  
+pred_logS           -29.6983     7.7388  -3.838 0.000181 ***
+pred_PSA              1.1133     0.2061   5.402 2.47e-07 ***
+pred_refractivity     2.9449     1.5741   1.871 0.063281 .  
+pred_polarizability  -7.7004     3.9899  -1.930 0.055459 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 91.4 on 153 degrees of freedom
+Multiple R-squared:  0.728,	Adjusted R-squared:  0.7191 
+F-statistic: 81.91 on 5 and 153 DF,  p-value: < 2.2e-16
+
